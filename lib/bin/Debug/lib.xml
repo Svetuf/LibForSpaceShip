@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>lib</name>
+    </assembly>
+    <members>
+        <member name="T:ds.test.impl.IntMathFunctions">
+            <summary>
+            An abstract class that represents a base for
+            classes of large mathematical calculations.
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.IntMathFunctions.Calculate(System.Int32,System.Int32)">
+            <summary>
+            Calculus function.
+            </summary>
+            <param name="a">First integer.</param>
+            <param name="b">Second integer.</param>
+            <returns>
+            Result of calculating function.
+            </returns>
+        </member>
+        <member name="T:ds.test.impl.IPlugin">
+            <summary>
+            Basic interface for plugin.
+            </summary>
+        </member>
+        <member name="T:ds.test.impl.PluginFactory">
+            <summary>
+            Plugin factory interface.
+            </summary>
+        </member>
+        <member name="T:ds.test.impl.Plugins">
+            <summary>
+            Class for work with plugins.
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.Plugins.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.Plugins.PluginsCount">
+            <summary>
+            Count of total availible types of Plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.Plugins.GetPluginNames">
+            <summary>
+            All allow names of Plugins.
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.Plugins.GetPlugin(System.String)">
+            <summary>
+            Create new Plugin bject based on given param.
+            </summary>
+            <param name="pluginName">Name of plugin to create, see <see cref="P:ds.test.impl.Plugins.PluginsCount"/>.</param>
+            <returns>Created plugin.</returns>
+        </member>
+        <member name="T:ds.test.impl.AddingPlugin">
+            <summary>
+            Plugin that add two integers.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.AddingPlugin.PluginName">
+            <summary>
+            Name of this plugin, uses in <see cref="M:ds.test.impl.Plugins.GetPlugin(System.String)"/>.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.AddingPlugin.Version">
+            <summary>
+            Version of this plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.AddingPlugin.Image">
+            <summary>
+            Image of plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.AddingPlugin.Description">
+            <summary>
+            Description of this plugin.
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.AddingPlugin.Run(System.Int32,System.Int32)">
+            <summary>
+            Calculating method.
+            </summary>
+            <param name="input1"></param>
+            <param name="input2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ds.test.impl.SubtractionPlugin">
+            <summary>
+            Plugin that substract two integers.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.SubtractionPlugin.PluginName">
+            <summary>
+            Name of this plugin, uses in <see cref="M:ds.test.impl.Plugins.GetPlugin(System.String)"/>.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.SubtractionPlugin.Version">
+            <summary>
+            Version of this plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.SubtractionPlugin.Image">
+            <summary>
+            Image of plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.SubtractionPlugin.Description">
+            <summary>
+            Description of this plugin.
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.SubtractionPlugin.Run(System.Int32,System.Int32)">
+            <summary>
+            Calculating method.
+            </summary>
+            <param name="input1"></param>
+            <param name="input2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ds.test.impl.MultiplyPlugin">
+            <summary>
+            Plugin that multiply two integers.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:ds.test.impl.MultiplyPlugin.PluginName" -->
+        <member name="P:ds.test.impl.MultiplyPlugin.Version">
+            <summary>
+            Version of this plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.MultiplyPlugin.Image">
+            <summary>
+            Image of plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.MultiplyPlugin.Description">
+            <summary>
+            Description of this plugin.
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.MultiplyPlugin.Run(System.Int32,System.Int32)">
+            <summary>
+            Calculating method.
+            </summary>
+            <param name="input1"></param>
+            <param name="input2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ds.test.impl.GCDPlugin">
+            <summary>
+            Plugin that find great common diviser of two integers.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.GCDPlugin.PluginName">
+            <summary>
+            Name of this plugin, uses in <see cref="M:ds.test.impl.Plugins.GetPlugin(System.String)"/>.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.GCDPlugin.Version">
+            <summary>
+            Version of this plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.GCDPlugin.Image">
+            <summary>
+            Image of plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.GCDPlugin.Description">
+            <summary>
+            Description of this plugin.
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.GCDPlugin.Run(System.Int32,System.Int32)">
+            <summary>
+            Method that run calculating.
+            </summary>
+            <param name="input1"></param>
+            <param name="input2"></param>
+            <returns>GCD of two integers</returns>
+        </member>
+        <member name="M:ds.test.impl.GCDPlugin.Calculate(System.Int32,System.Int32)">
+            <summary>
+            Calculating a GCD of two integers.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>GCD.</returns>
+        </member>
+        <member name="T:ds.test.impl.LCMPlugin">
+            <summary>
+            "Plugin that find least common multiple of two integers".
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.LCMPlugin.abs(System.Int32)">
+            <summary>
+            Asolute value of two integers.
+            </summary>
+            <param name="x"></param>
+            <returns>Asolute value of two integers.</returns>
+        </member>
+        <member name="P:ds.test.impl.LCMPlugin.PluginName">
+            <summary>
+            Name of this plugin, uses in <see cref="M:ds.test.impl.Plugins.GetPlugin(System.String)"/>.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.LCMPlugin.Version">
+            <summary>
+            Version of this plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.LCMPlugin.Image">
+            <summary>
+            Image of plugin.
+            </summary>
+        </member>
+        <member name="P:ds.test.impl.LCMPlugin.Description">
+            <summary>
+            Description of this plugin.
+            </summary>
+        </member>
+        <member name="M:ds.test.impl.LCMPlugin.Run(System.Int32,System.Int32)">
+            <summary>
+            Method that run calculating.
+            </summary>
+            <param name="input1"></param>
+            <param name="input2"></param>
+            <returns>LCM of two integers</returns>
+        </member>
+        <member name="M:ds.test.impl.LCMPlugin.Calculate(System.Int32,System.Int32)">
+            <summary>
+            Calculating a LCM of two integers.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>LCM.</returns>
+        </member>
+        <member name="T:lib.Properties.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:lib.Properties.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:lib.Properties.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="P:lib.Properties.Resources.gcd">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:lib.Properties.Resources.lcm">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:lib.Properties.Resources.minus">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:lib.Properties.Resources.mult">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:lib.Properties.Resources.plus">
+            <summary>
+              Поиск локализованного ресурса типа System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

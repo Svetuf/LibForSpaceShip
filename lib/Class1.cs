@@ -46,6 +46,9 @@ namespace ds.test.impl
     /// </summary>
     public class Plugins : PluginFactory
     {
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
         public Plugins()
         {
             GetPluginNames = new string[]{ "Adding Plugin", "Substraction Plugin",
@@ -112,7 +115,7 @@ namespace ds.test.impl
         /// <summary>
         /// Image of plugin.
         /// </summary>
-        public Image Image { get; }
+        public Image Image { get; } = lib.Properties.Resources.plus;
 
         /// <summary>
         /// Description of this plugin.
@@ -155,7 +158,7 @@ namespace ds.test.impl
         /// <summary>
         /// Image of plugin.
         /// </summary>
-        public Image Image { get; }
+        public Image Image { get; } = lib.Properties.Resources.minus;
 
         /// <summary>
         /// Description of this plugin.
@@ -199,7 +202,7 @@ namespace ds.test.impl
         /// <summary>
         /// Image of plugin.
         /// </summary>
-        public Image Image { get; }
+        public Image Image { get; } = lib.Properties.Resources.mult;
 
         /// <summary>
         /// Description of this plugin.
@@ -243,7 +246,7 @@ namespace ds.test.impl
         /// <summary>
         /// Image of plugin.
         /// </summary>
-        public Image Image { get; }
+        public Image Image { get; } = lib.Properties.Resources.gcd;
 
         /// <summary>
         /// Description of this plugin.
@@ -315,7 +318,7 @@ namespace ds.test.impl
         /// <summary>
         /// Image of plugin.
         /// </summary>
-        public Image Image { get; }
+        public Image Image { get; } = lib.Properties.Resources.lcm;
 
         /// <summary>
         /// Description of this plugin.
@@ -341,6 +344,8 @@ namespace ds.test.impl
         /// <returns>LCM.</returns>
         public override int Calculate(int a, int b)
         {
+            int a_was = a;
+            int b_was = b;
             int t;
             while (b != 0)
             {
@@ -348,7 +353,7 @@ namespace ds.test.impl
                 b = a % b;
                 a = t;
             }
-            return abs(a * b)/a;
+            return abs(a_was * b_was)/a;
         }
     }
 }

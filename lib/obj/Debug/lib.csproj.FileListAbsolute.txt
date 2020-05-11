@@ -1,5 +1,7 @@
 C:\Users\iluch\source\repos\lib\lib\bin\Debug\lib.dll
 C:\Users\iluch\source\repos\lib\lib\bin\Debug\lib.pdb
-C:\Users\iluch\source\repos\lib\lib\obj\Debug\lib.csprojAssemblyReference.cache
 C:\Users\iluch\source\repos\lib\lib\obj\Debug\lib.dll
 C:\Users\iluch\source\repos\lib\lib\obj\Debug\lib.pdb
+C:\Users\iluch\source\repos\lib\lib\bin\Debug\lib.xml
+C:\Users\iluch\source\repos\lib\lib\obj\Debug\lib.Properties.Resources.resources
+C:\Users\iluch\source\repos\lib\lib\obj\Debug\lib.csproj.GenerateResource.cache

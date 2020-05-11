@@ -45,6 +45,39 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.webp" />
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\263902544_348756.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-l1600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-kopiya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200x630wa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\big_thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345-3454396_multiply-png-close-button-icon-png-clipart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
